@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Депозитный калькулятор</title>
+        <meta charset="UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/jquery-validation/dist/jquery.validate.min.js"></script>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+    <body>
+        <div class="mainForm" id="mForm">
+
+        <h1 class="title">Депозитный калькулятор</h1>
+        <h4>Калькулятор депозитов позволяет расчитать ваши доходы после внесения суммы на счет в банке по определенному тарифу</h4>
+                <div>
+                <div class="blok">
+                <input class="inputData" type="date" id="startDate" placeholder="Дата открытия">
+                <select class="selector align" id="terms">
+                    <option value="month">месяц</option>
+                    <option value="year">год</option>
+                </select>
+                <input class="inputData lessWight align" type="number" id="term" name="term" placeholder="Срок вклада">
+
+                </div><br>
+                <div class="blok">
+                <input class="inputData" type="number" id="sum" name="sum" placeholder="Сумма вклада">
+                <input class="inputData align" type="number" id="percent" name="percent" placeholder="Процентная ставка, % годовых">
+                </div><br>
+                <div class="blok">
+                <input class="cBox" type="checkbox" checked="checked" onclick="checkAdd()" id="isSumAdd" name="isSumAdd">
+                <span>Ежемесячное пополнения вклада</span>
+                <input class="inputData align" type="number" id="sumAdd" name="sumAdd" placeholder="Сумма пополнения вклада">
+                </div><br>
+                <button class="buttonClick" onclick="sendJSON()">Расчитать</button>
+            <p class="result"></p>
+                </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

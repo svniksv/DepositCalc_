@@ -1,0 +1,68 @@
+body {
+    background-color: grey;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 5%;
+}
+
+h4 {
+    text-align: center;
+}
+
+.mainForm {
+    margin-top: 0;
+    height: 100vh;
+    background-color: darkgrey;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.inputData {
+    height: 40px;
+    width: 250px;
+    margin-top: 5%;
+}
+
+.selector {
+    height: 46px;
+    margin-left: -5px;
+    margin-top: 5%;
+}
+
+.cBox{
+    margin-top: 7%;
+}
+
+.lessWight{
+    width: 186px;
+}
+
+.align {
+    float: right;
+}
+
+.blok {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.buttonClick {
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    margin-left: 10%;
+    font-size: medium;
+    border: none;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.result {
+    font-size: 20px;
+    margin-left: 10%;
+}
